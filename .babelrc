@@ -1,0 +1,17 @@
+{
+  "presets": [
+    "@babel/preset-env"
+  ],
+  // "plugins": ["transform-vue-jsx"],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-syntax-dynamic-import",
+    "transform-vue-jsx"
+  ],
+  "env": {
+    "test": {
+      "presets": ["@babel/preset-env"],
+      "plugins": ["transform-vue-jsx", "dynamic-import-node"]
+    }
+  }
+}
