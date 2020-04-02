@@ -3,11 +3,13 @@ import {
   Button,
   LgtButtonGroup,
   Link,
+  Loading,
   Style
 } from './module'
 import { processComponentName } from './common/helpers/util'
 
-import './common/icon/cube-icon.scss'
+// cube 组件的icon样式，现在使用elementui的icon，全部替换调
+// import './common/icon/cube-icon.scss'
 
 import './components/style/icon.scss'
 
@@ -15,6 +17,7 @@ const components = [
   Icon,
   Button,
   LgtButtonGroup,
+  Loading,
   Link
 ]
 

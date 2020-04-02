@@ -70,11 +70,12 @@
       font-weight: 700;
     }
     .lgt-icon-arrow-left {
+      font-size: 16px;
       position: absolute;
       top: 0;
       left: 0;
       padding: 0 15px;
-      color: #fc9153;
+      color: #409eff;
     }
   }
   > .wrapper {

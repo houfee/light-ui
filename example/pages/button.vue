@@ -11,6 +11,24 @@
       </lgt-button-group>
 
       <lgt-button-group>
+        <lgt-button disabled>默认按钮</lgt-button>
+        <lgt-button type="primary" disabled>主要按钮</lgt-button>
+        <lgt-button type="success" disabled>成功按钮</lgt-button>
+        <lgt-button type="info" disabled>信息按钮</lgt-button>
+        <lgt-button type="warning" disabled>警告按钮</lgt-button>
+        <lgt-button type="danger" disabled>危险按钮</lgt-button>
+      </lgt-button-group>
+
+      <lgt-button-group>
+        <lgt-button plain disabled>朴素按钮</lgt-button>
+        <lgt-button type="primary" plain disabled>主要按钮</lgt-button>
+        <lgt-button type="success" plain disabled>成功按钮</lgt-button>
+        <lgt-button type="info" plain disabled>信息按钮</lgt-button>
+        <lgt-button type="warning" plain disabled>警告按钮</lgt-button>
+        <lgt-button type="danger" plain disabled>危险按钮</lgt-button>
+      </lgt-button-group>
+      
+      <lgt-button-group>
         <lgt-button round>圆角按钮</lgt-button>
         <lgt-button type="primary" round>主要按钮</lgt-button>
         <lgt-button type="success" round>成功按钮</lgt-button>

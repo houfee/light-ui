@@ -44,15 +44,73 @@ export default {
           'items': [
             {
               path: '/icon',
-              text: 'Icon 图标'
+              text: 'Icon'
             },
             {
               path: '/button',
-              text: 'Button 按钮'
+              text: 'Button'
             },
             {
               path: '/link',
-              text: 'Link 文字链接'
+              text: 'Link'
+            },
+            {
+              path: '/loading',
+              text: 'Loading'
+            }
+          ]
+        },
+        {
+          'name': 'Form 表单组件',
+          'shortcut': 'Form',
+          'items': [
+            {
+              path: '/checkbox',
+              text: 'Checkbox'
+            },
+            {
+              path: '/checkbox-group',
+              text: 'CheckboxGroup'
+            },
+            {
+              path: '/checker',
+              text: 'Checker'
+            },
+            {
+              path: '/radio',
+              text: 'Radio'
+            },
+            {
+              path: '/input',
+              text: 'Input'
+            },
+            {
+              path: '/textarea',
+              text: 'Textarea'
+            },
+            {
+              path: '/select',
+              text: 'Select'
+            },
+            {
+              path: '/switch',
+              text: 'Switch'
+            },
+            {
+              path: '/rate',
+              text: 'Rate'
+            },
+            {
+              path: '/validator',
+              text: 'Validator'
+            },
+            {
+              path: '/upload',
+              text: 'Upload'
+            },
+            {
+              path: '/form',
+              text: 'Form'
             }
           ]
         },
@@ -63,6 +121,85 @@ export default {
             {
               path: '/popup',
               text: 'Popup'
+            },
+            {
+              path: '/toast',
+              text: 'Toast'
+            },
+
+            {
+              path: '/picker',
+              text: 'Picker'
+            },
+            {
+              path: '/cascade-picker',
+              text: 'CascadePicker'
+            },
+            {
+              path: '/segment-picker',
+              text: 'SegmentPicker'
+            },
+            {
+              path: '/date-picker',
+              text: 'DatePicker'
+            },
+            {
+              path: '/time-picker',
+              text: 'TimePicker'
+            },
+            {
+              path: '/dialog',
+              text: 'Dialog'
+            },
+            {
+              path: '/action-sheet',
+              text: 'ActionSheet'
+            },
+            {
+              path: '/drawer',
+              text: 'Drawer'
+            },
+            {
+              path: '/image-preview',
+              text: 'ImagePreview'
+            }
+          ]
+        },
+        {
+          'name': 'Scroll 滚动组件',
+          'shortcut': 'Scroll',
+          'items': [
+            {
+              path: '/scroll',
+              text: 'Scroll'
+            },
+            {
+              path: '/slide',
+              text: 'Slide'
+            },
+            {
+              path: '/index-list',
+              text: 'IndexList'
+            },
+            {
+              path: '/swipe',
+              text: 'Swipe'
+            },
+            {
+              path: '/sticky',
+              text: 'Sticky'
+            },
+            {
+              path: '/scroll-nav-bar',
+              text: 'ScrollNavBar'
+            },
+            {
+              path: '/scroll-nav',
+              text: 'ScrollNav'
+            },
+            {
+              path: '/recycle-list',
+              text: 'RecycleList'
             }
           ]
         }
