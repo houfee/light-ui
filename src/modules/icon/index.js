@@ -1,8 +1,8 @@
-import HfIcon from '../../components/icon/icon.vue';
+import LgtIcon from '../../components/icon/icon.vue';
 
 /* istanbul ignore next */
-HfIcon.install = function(Vue) {
-  Vue.component(HfIcon.name, HfIcon);
+LgtIcon.install = function(Vue) {
+  Vue.component(LgtIcon.name, LgtIcon);
 };
 
-export default HfIcon;
+export default LgtIcon;

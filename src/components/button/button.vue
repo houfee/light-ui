@@ -1,9 +1,9 @@
 <template>
   <button
-    class="hf-button"
+    class="lgt-button"
     @click="handleClick"
     :class="[
-      type ? 'hf-button--' + type : '',
+      type ? 'lgt-button--' + type : '',
       {
         'is-disabled': buttonDisabled,
         'is-loading': loading,
@@ -13,7 +13,7 @@
       }
     ]"
   >
-    <i class="hf-icon-loading" v-if="loading"></i>
+    <i class="lgt-icon-loading" v-if="loading"></i>
     <i :class="icon" v-if="icon"></i>
     <!-- $slots.default 获取所有插槽，判断span是否渲染 -->
     <span v-if="$slots.default"><slot></slot></span>
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: 'HfButton',
+  name: 'LgtButton',
   props: {
     type: {
       type: String,

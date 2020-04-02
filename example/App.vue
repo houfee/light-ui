@@ -1,89 +1,39 @@
 <template>
   <div id="app">
-    <header class="light-bar">
+    <header class="lgt-bar">
       <h1>light-ui</h1>
     </header>
-    <div class="light-content">
-      <span class="hf-icon-delete"></span>
+    <section class="lgt-content" ref="mfct">
+      <div class="lgt-list">
+        <ul v-for="(group, index) in components" :key="index">
+          <li class="cube-item">{{ group.name }}</li>
+          <li class="cube-item" v-for="(subGroup, subIndex) in group.items" :key="subIndex">
+            <router-link class="link" :to="subGroup.path">{{subGroup.text}}<i
+              class="lgt-arrow"></i>
+            </router-link>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <lgt-view></lgt-view>
+    <!-- <div class="lgt-content">
+      <span class="lgt-icon-delete"></span>
       <span class="cubeic-close"></span>
       <div class="part">
         <h1>Icon 图标</h1>
         <div class="row">
-          <i class="hf-icon-edit"></i>
-          <i class="hf-icon-share"></i>
-          <i class="hf-icon-delete"></i>
-          <hf-button type="primary" icon="hf-icon-search">搜索</hf-button>
+          <i class="lgt-icon-edit"></i>
+          <i class="lgt-icon-share"></i>
+          <i class="lgt-icon-delete"></i>
+          <lgt-button type="primary" icon="lgt-icon-search">搜索</lgt-button>
         </div>
       </div>
-      <!-- <light-view></light-view> -->
-      <div class="part">
-        <h1>Button 按钮</h1>
-        <div class="row">
-          <hf-button>默认按钮</hf-button>
-          <hf-button type="primary">主要按钮</hf-button>
-          <hf-button type="success">成功按钮</hf-button>
-          <hf-button type="info">信息按钮</hf-button>
-          <hf-button type="warning">警告按钮</hf-button>
-          <hf-button type="danger">危险按钮</hf-button>
-        </div>
-
-        <div class="row">
-          <hf-button round>圆角按钮</hf-button>
-          <hf-button type="primary" round>主要按钮</hf-button>
-          <hf-button type="success" round>成功按钮</hf-button>
-          <hf-button type="info" round>信息按钮</hf-button>
-          <hf-button type="warning" round>警告按钮</hf-button>
-          <hf-button type="danger" round>危险按钮</hf-button>
-        </div>
-
-        <div class="row">
-          <hf-button icon="hf-icon-search" circle></hf-button>
-          <hf-button type="primary" icon="hf-icon-edit" circle></hf-button>
-          <hf-button type="success" icon="hf-icon-check" circle></hf-button>
-          <hf-button type="info" icon="hf-icon-message" circle></hf-button>
-          <hf-button type="warning" icon="hf-icon-star-off" circle></hf-button>
-          <hf-button type="danger" icon="hf-icon-delete" circle></hf-button>
-        </div>
-
-        <div class="row">
-          <hf-button>默认按钮</hf-button>
-          <hf-button type="primary">主要按钮</hf-button>
-          <hf-button type="success">成功按钮</hf-button>
-          <hf-button type="info">信息按钮</hf-button>
-          <hf-button type="warning">警告按钮</hf-button>
-          <hf-button type="danger" icon="hf-icon-delete">危险按钮</hf-button>
-        </div>
-
-        <div class="row">
-          <hf-button type="text">文字按钮</hf-button>
-        </div>
-
-        <div class="row">
-          <hf-button type="primary" icon="hf-icon-edit"></hf-button>
-          <hf-button type="primary" icon="hf-icon-share"></hf-button>
-          <hf-button type="primary" icon="hf-icon-delete"></hf-button>
-          <hf-button type="primary" icon="hf-icon-search">搜索</hf-button>
-          <hf-button type="primary">上传<i class="hf-icon-upload hf-icon--right"></i></hf-button>
-        </div>
-
-        <div class="row">
-          <hf-button-group>
-            <hf-button type="primary" icon="hf-icon-arrow-left">上一页</hf-button>
-            <hf-button type="primary">下一页<i class="hf-icon-arrow-right hf-icon--right"></i></hf-button>
-          </hf-button-group>
-          <hf-button-group>
-            <hf-button type="primary" icon="hf-icon-edit"></hf-button>
-            <hf-button type="primary" icon="hf-icon-share"></hf-button>
-            <hf-button type="primary" icon="hf-icon-delete"></hf-button>
-          </hf-button-group>
-        </div>
-      </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import LightView from './components/light-view.vue'
+import LgtView from './components/lgt-view.vue'
 export default {
   data() {
     return {
@@ -93,8 +43,16 @@ export default {
           'shortcut': 'Basic',
           'items': [
             {
+              path: '/icon',
+              text: 'Icon 图标'
+            },
+            {
               path: '/button',
-              text: 'Button'
+              text: 'Button 按钮'
+            },
+            {
+              path: '/link',
+              text: 'Link 文字链接'
             }
           ]
         },
@@ -111,9 +69,9 @@ export default {
       ]
     }
   },
-  // components: {
-  //   LightView
-  // }
+  components: {
+    LgtView
+  }
 }
 </script>
 
@@ -128,7 +86,7 @@ body {
 #app {
   text-align: center;
 }
-.light-bar {
+.lgt-bar {
   z-index: 10;
   position: absolute;
   right: 0;
@@ -146,7 +104,7 @@ body {
   }
 }
 
-.light-content {
+.lgt-content {
   position: absolute;
   top: 44px;
   left: 0;
@@ -154,7 +112,7 @@ body {
   bottom: 0;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
-  .light-list {
+  .lgt-list {
     padding-left: 10px;
     z-index: 1;
     font-size: 16px;
@@ -162,13 +120,15 @@ body {
       .cube-item {
         height: 40px;
         line-height: 40px;
-        padding-left: 16px;.link {
+        padding-left: 16px;
+        .link {
           display: block;
           position: relative;
           width: 100%;
           color: #333;
           text-decoration: none;
-          outline: 0;.cubeic-arrow {
+          outline: 0;
+          .lgt-arrow {
             position: absolute;
             right: 0;
             padding: 0 5px;
@@ -193,23 +153,4 @@ body {
     }
   }
 }
-
-.part {
-  padding: 5px 0;
-  box-sizing: border-box;
-  border-top: rgb(241, 211, 190) 2px solid;
-  border-bottom: rgb(241, 211, 190) 2px solid;
-  background-color: rgb(217, 221, 228);
-
-}
-.part h1 {
-  font-weight: 700;
-  color: #2c3e50;
-  font-size: 20px;
-  margin-bottom: 5px;
-}
-.part + .part {
-  margin-top: 20px;
-}
-
 </style>

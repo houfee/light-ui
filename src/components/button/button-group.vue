@@ -1,10 +1,10 @@
 <template>
-  <div class="fh-button-group">
+  <div class="lgt-button-group">
     <slot></slot>
   </div>
 </template>
 <script>
   export default {
-    name: 'HfButtonGroup'
+    name: 'LgtButtonGroup'
   };
 </script>

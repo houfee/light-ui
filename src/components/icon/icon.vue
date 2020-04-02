@@ -1,10 +1,10 @@
 <template>
-  <i :class="'hf-icon-' + name"></i>
+  <i :class="'lgt-icon-' + name"></i>
 </template>
 
 <script>
   export default {
-    name: 'HfIcon',
+    name: 'LgtIcon',
 
     props: {
       name: String

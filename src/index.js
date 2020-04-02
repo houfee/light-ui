@@ -1,7 +1,8 @@
 import {
-  Button,
-  HfButtonGroup,
   Icon,
+  Button,
+  LgtButtonGroup,
+  Link,
   Style
 } from './module'
 import { processComponentName } from './common/helpers/util'
@@ -11,9 +12,10 @@ import './common/icon/cube-icon.scss'
 import './components/style/icon.scss'
 
 const components = [
+  Icon,
   Button,
-  HfButtonGroup,
-  Icon
+  LgtButtonGroup,
+  Link
 ]
 
 const install = function(Vue) {

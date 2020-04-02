@@ -1,62 +1,81 @@
 <template>
-  <cube-page type="button-view" title="Button">
+  <lgt-page :desc="desc" type="button-view" title="Button">
     <div slot="content">
-      <form action="/">
-        <cube-button-group>
-          <cube-button>Button</cube-button>
-          <cube-button type="submit">Submit Button</cube-button>
-        </cube-button-group>
-        <cube-button-group>
-          <cube-button :active="true">Active Button</cube-button>
-          <cube-button :disabled="true">Disabled Button</cube-button>
-        </cube-button-group>
-        <cube-button-group>
-          <cube-button icon="cubeic-right">Button With Icon</cube-button>
-        </cube-button-group>
-        <cube-button-group>
-          <cube-button :light="true">Light Button</cube-button>
-          <cube-button :inline="true">Inline Button</cube-button>
-          <cube-button :outline="true">Outline Button</cube-button>
-          <cube-button :primary="true">Primary Button</cube-button>
-        </cube-button-group>
-        <div>
-          <cube-checkbox-group v-model="buttonStyle" :horizontal="true">
-            <cube-checkbox label="inline">Inline</cube-checkbox>
-            <cube-checkbox label="outline">Outline</cube-checkbox>
-            <cube-checkbox label="primary">Primary</cube-checkbox>
-          </cube-checkbox-group>
-          <cube-button-group>
-            <cube-button :inline="inlineStyle" :outline="outlineStyle" :primary="primaryStyle">Demo Button</cube-button>
-          </cube-button-group>
-        </div>
-      </form>
+      <lgt-button-group>
+        <lgt-button>默认按钮</lgt-button>
+        <lgt-button type="primary">主要按钮</lgt-button>
+        <lgt-button type="success">成功按钮</lgt-button>
+        <lgt-button type="info">信息按钮</lgt-button>
+        <lgt-button type="warning">警告按钮</lgt-button>
+        <lgt-button type="danger">危险按钮</lgt-button>
+      </lgt-button-group>
+
+      <lgt-button-group>
+        <lgt-button round>圆角按钮</lgt-button>
+        <lgt-button type="primary" round>主要按钮</lgt-button>
+        <lgt-button type="success" round>成功按钮</lgt-button>
+        <lgt-button type="info" round>信息按钮</lgt-button>
+        <lgt-button type="warning" round>警告按钮</lgt-button>
+        <lgt-button type="danger" round>危险按钮</lgt-button>
+      </lgt-button-group>
+
+      <lgt-button-group>
+        <lgt-button icon="lgt-icon-search" circle></lgt-button>
+        <lgt-button type="primary" icon="lgt-icon-edit" circle></lgt-button>
+        <lgt-button type="success" icon="lgt-icon-check" circle></lgt-button>
+        <lgt-button type="info" icon="lgt-icon-message" circle></lgt-button>
+        <lgt-button type="warning" icon="lgt-icon-star-off" circle></lgt-button>
+        <lgt-button type="danger" icon="lgt-icon-delete" circle></lgt-button>
+      </lgt-button-group>
+
+      <lgt-button-group>
+        <lgt-button>默认按钮</lgt-button>
+        <lgt-button type="primary">主要按钮</lgt-button>
+        <lgt-button type="success">成功按钮</lgt-button>
+        <lgt-button type="info">信息按钮</lgt-button>
+        <lgt-button type="warning">警告按钮</lgt-button>
+        <lgt-button type="danger" icon="lgt-icon-delete">危险按钮</lgt-button>
+      </lgt-button-group>
+
+      <lgt-button-group>
+        <lgt-button type="text">文字按钮</lgt-button>
+      </lgt-button-group>
+
+      <lgt-button-group>
+        <lgt-button type="primary" icon="lgt-icon-edit"></lgt-button>
+        <lgt-button type="primary" icon="lgt-icon-share"></lgt-button>
+        <lgt-button type="primary" icon="lgt-icon-delete"></lgt-button>
+        <lgt-button type="primary" icon="lgt-icon-search">搜索</lgt-button>
+        <lgt-button type="primary">上传<i class="lgt-icon-upload lgt-icon--right"></i></lgt-button>
+      </lgt-button-group>
+
+      <lgt-button-group>
+        <lgt-button type="primary" icon="lgt-icon-arrow-left">上一页</lgt-button>
+        <lgt-button type="primary">下一页<i class="lgt-icon-arrow-right lgt-icon--right"></i></lgt-button>
+      </lgt-button-group>
+
+      <lgt-button-group>
+        <lgt-button type="primary" icon="lgt-icon-edit"></lgt-button>
+        <lgt-button type="primary" icon="lgt-icon-share"></lgt-button>
+        <lgt-button type="primary" icon="lgt-icon-delete"></lgt-button>
+        <lgt-button type="primary" :loading="true">加载中</lgt-button>
+      </lgt-button-group>
     </div>
-  </cube-page>
+  </lgt-page>
 </template>
 
 <script type="text/ecmascript-6">
-  import CubeButtonGroup from '../components/cube-button-group.vue'
-  import CubePage from '../components/cube-page.vue'
+  import LgtButtonGroup from '../components/lgt-button-group.vue'
+  import LgtPage from '../components/lgt-page.vue'
   export default {
     data() {
       return {
-        buttonStyle: ['inline', 'outline', 'primary']
-      }
-    },
-    computed: {
-      inlineStyle() {
-        return this.buttonStyle.indexOf('inline') >= 0
-      },
-      outlineStyle() {
-        return this.buttonStyle.indexOf('outline') >= 0
-      },
-      primaryStyle() {
-        return this.buttonStyle.indexOf('primary') >= 0
+        desc: '按钮组件，由element-ui提炼在移动端，删除了禁用时的状态'
       }
     },
     components: {
-      CubeButtonGroup,
-      CubePage
+      LgtButtonGroup,
+      LgtPage
     }
   }
 </script>

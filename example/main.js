@@ -1,8 +1,12 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import App from './App'
-// import router from './router'
+import router from './router'
 import Light from '../src/index'
+
 Vue.use(Light)
+Vue.use(VueRouter)
+
 Vue.config.productionTip = false
 console.log(process.env)
 
@@ -12,6 +16,6 @@ console.log(process.env)
 
 /* eslint-disable no-new */
 new Vue({
-  // router,
+  router,
   render: h => h(App)
 }).$mount('#app')

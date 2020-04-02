@@ -31,7 +31,7 @@
     border: 0;
   }
 
-  & [class*="hf-icon-"] {
+  & [class*="lgt-icon-"] {
     & + span {
       margin-left: 5px;
     }
@@ -108,10 +108,10 @@
   display: inline-block;
   vertical-align: middle;
 
-  & > .hf-button {
+  & > .lgt-button {
     float: left;
     position: relative;
-    & + .hf-button {
+    & + .lgt-button {
       margin-left: 0;
     }
     &.is-disabled {
@@ -157,8 +157,8 @@
     }
   }
   
-  & > .hf-dropdown {
-    & > .hf-button {
+  & > .lgt-dropdown {
+    & > .lgt-button {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       border-left-color: rgba($--color-white, 0.5);
@@ -166,7 +166,7 @@
   }
 
   @each $type in (primary, success, warning, danger, info) {
-    .hf-button--#{$type} {
+    .lgt-button--#{$type} {
       &:first-child {
         border-right-color: rgba($--color-white, 0.5);
       }
