@@ -57,7 +57,7 @@ Toolbar, with actions & more-actions.
   ```
   ```stylus
   .orange
-    color: #fc9153
+    color: #409EFF
   ```
 
   You can use handle the action in `click` event handler.
@@ -131,7 +131,7 @@ Toolbar, with actions & more-actions.
   ```
   ```stylus
   .orange
-    color: #fc9153
+    color: #409EFF
   ```
 
 ### Props

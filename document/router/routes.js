@@ -7,7 +7,6 @@ Object.keys(menuConfig).forEach((lang) => {
   const loadingNotify = (p, flag) => {
     eventHub.$emit('begin-loading')
     return p.then((r) => {
-      console.log('111111', r)
       eventHub.$emit('finish-loading')
       return  r
     })
@@ -31,7 +30,7 @@ Object.keys(menuConfig).forEach((lang) => {
   })
 })
 
-console.log('--------------------------', routeMap)
+
 export default routeMap
 
 function getSubList (group) {

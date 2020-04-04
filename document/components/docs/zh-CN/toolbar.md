@@ -57,7 +57,7 @@
   ```
   ```stylus
   .orange
-    color: #fc9153
+    color: #409EFF
   ```
 
 - 更多操作
@@ -129,7 +129,7 @@
   ```
   ```stylus
   .orange
-    color: #fc9153
+    color: #409EFF
   ```
 
 ### Props 配置

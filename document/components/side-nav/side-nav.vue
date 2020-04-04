@@ -123,12 +123,12 @@
       background-color: #fbfbfb;
     }
     &.nav-active {
-      background-color: rgba(252, 145, 83, 0.2);
+      background-color: #d9ecff;
       &::after {
         content: '';
         width: 3px;
         height: 100%;
-        background-color: #fc9153;
+        background-color: #409EFF;
         position: absolute;
         z-index: 1;
         right: 0;
@@ -146,11 +146,11 @@
 .nav-li_active {
   .arrow {
     &::before {
-      border-top-color: #fc9153;
+      border-top-color: #409EFF;
     }
   }
   > .nav-name {
-    color: #fc9153;
+    color: #409EFF;
   }
 }
 .nav-name {

@@ -32,7 +32,8 @@ export function getCurrentLang() {
   return defaultLang
 }
 
-const baseUrl = process.env.NODE_ENV === 'production' ? 'https://didi.github.io/cube-ui/example/#/' : `http://${window.location.hostname}:8081/#/`
+// 用于doc的display演示，这是注意 baseUrl 指向什么位置
+const baseUrl = process.env.NODE_ENV === 'production' ? 'https://houfee.github.io/light-ui/example/#/' : `http://${window.location.hostname}:8080/#/`
 
 const eventHub = new Vue()
 
