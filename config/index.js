@@ -85,7 +85,7 @@ module.exports = {
       document: './document/main.js'
     },
     template: './document/index.html',
-    port: 8082,
+    port: 8085,
   },
   
   demoBuild: {

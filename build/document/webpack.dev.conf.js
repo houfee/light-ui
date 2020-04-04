@@ -6,9 +6,9 @@ const devWebpackConfig = require('../webpack.dev.conf')
 
 const entry = config.docDev.entry
 // add hot-reload related code to entry chunks
-// Object.keys(entry).forEach(function (name) {
-//   entry[name] = ['./build/dev-client'].concat(entry[name])
-// })
+Object.keys(entry).forEach(function (name) {
+  entry[name] = ['./build/dev-client'].concat(entry[name])
+})
 
 const docDevWebpackConfig = Object.assign({}, devWebpackConfig)
 const index = docDevWebpackConfig.plugins.findIndex(function (plugin) {

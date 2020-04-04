@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 import App from './App'
 import router from './router'
 import Light from '../src/index'
-
 Vue.use(Light)
 Vue.use(VueRouter)
 
