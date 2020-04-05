@@ -1,7 +1,7 @@
 <template>
   <div class="home-index">
     <div class="banner">
-      <h2>Cube UI</h2>
+      <h2>Light UI</h2>
       <p>
         <slot name="desc"></slot>
       </p>

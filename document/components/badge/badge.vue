@@ -1,5 +1,5 @@
 <template>
-  <a class="badge" href="https://github.com/didi/cube-ui" target="_blank">
+  <a class="badge" href="https://github.com/houfee/light-ui" target="_blank">
     <span class="badge-left">{{badgeName||type}}</span>
     <span class="badge-right">{{badgeValue || '...'}}</span>
   </a>
@@ -7,9 +7,9 @@
 <script>
   import ajax from '../../common/js/ajax.js'
   const urlMap = {
-    star: 'https://img.shields.io/github/stars/didi/cube-ui.json',
-    fork: 'https://img.shields.io/github/forks/didi/cube-ui.json',
-    watch: 'https://img.shields.io/github/watchers/didi/cube-ui.json'
+    star: 'https://img.shields.io/github/stars/houfee/light-ui.json',
+    fork: 'https://img.shields.io/github/forks/houfee/light-ui.json',
+    watch: 'https://img.shields.io/github/watchers/houfee/light-ui.json'
   }
   export default{
     data() {

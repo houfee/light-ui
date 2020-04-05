@@ -1,6 +1,6 @@
 <template>
   <home-index>
-    <template slot="desc">A fantastic mobile ui lib implement by Vue.js</template>
+    <template slot="desc">a mobile component library including cube UI and element UI by Vue.js</template>
     <template slot="rec-btns">
       <router-link to="/en-US/docs/quick-start" class="btn-link"><span>Quick Start</span></router-link>
       <router-link to="/en-US/docs/introduction" class="btn-link btn-active"><span>Introduction</span></router-link>

@@ -1,6 +1,6 @@
 <template>
   <home-index>
-    <template slot="desc">基于 Vue.js 实现的精致移动端组件库</template>
+    <template slot="desc">基于 Vue.js，并添加 Cube-UI Element-UI 等组件实现的移动端组件库</template>
     <template slot="rec-btns">
       <router-link to="/zh-CN/docs/quick-start" class="btn-link"><span>快速上手</span></router-link>
       <router-link to="/zh-CN/docs/introduction" class="btn-link btn-active"><span>介绍</span></router-link>
