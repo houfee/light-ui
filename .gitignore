@@ -2,7 +2,6 @@
 node_modules/
 /other/
 /dist/
-/docs/
 /lib/
 /package-lock.json/
 npm-debug.log*

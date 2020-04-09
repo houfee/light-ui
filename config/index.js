@@ -79,6 +79,7 @@ module.exports = {
     assetsSubDirectory: '',
     productionSourceMap: false
   },
+  
   docDev: {
     env: require('./dev.env'),
     entry: {
