@@ -4,6 +4,7 @@ import {
   LgtButtonGroup,
   Link,
   Loading,
+  Popup,
   Style
 } from './module'
 import { processComponentName } from './common/helpers/util'
@@ -17,8 +18,9 @@ const components = [
   Icon,
   Button,
   LgtButtonGroup,
+  Link,
   Loading,
-  Link
+  Popup
 ]
 
 const install = function(Vue) {
