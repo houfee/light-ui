@@ -71,7 +71,7 @@ var webpackConfig = merge(baseWebpackConfig, {
   devtool: config.docBuild.productionSourceMap ? '#source-map' : false,
   output: {
     path: config.docBuild.assetsRoot,
-    publicPath: '/',
+    publicPath: '/light-ui/',
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
