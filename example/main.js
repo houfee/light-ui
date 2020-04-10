@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import App from './App'
 import router from './router'
 import Light from '../src/index'
+// import '../src/components/style/common/reset.scss'
 Vue.use(Light)
 Vue.use(VueRouter)
 

@@ -1,18 +1,14 @@
-import {
-  Icon,
-  Button,
-  LgtButtonGroup,
-  Link,
-  Loading,
-  Popup,
-  Style
-} from './module'
-import { processComponentName } from './common/helpers/util'
-
-// cube 组件的icon样式，现在使用elementui的icon，全部替换调
-// import './common/icon/cube-icon.scss'
-
+/* eslint-disable no-unused-vars */
+import Icon from './components/icon'
+import Button from './components/button'
+import LgtButtonGroup from './components/button-group'
+import Link from './components/link'
+import Loading from './components/loading'
+import Popup from './components/popup'
+import Style from './common/scss'
 import './components/style/icon.scss'
+
+import { processComponentName } from './common/helpers/util'
 
 const components = [
   Icon,
@@ -23,17 +19,11 @@ const components = [
   Popup
 ]
 
-const install = function(Vue) {
-  if (install.installed) {
-    return
-  }
+const install = function(Vue, config = {}) {
+  if (install.installed) return
   install.installed = true
   components.forEach((Component) => {
-    // ignore radio
-    // if (Component === Radio) {
-    //   return
-    // }
-    Component.install(Vue)
+    Vue.component(Component.name, Component)
   })
 }
 
@@ -53,7 +43,8 @@ components.forEach((Component) => {
 })
 
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(install)
+  install(window.Vue);
 }
 
+export { Light }
 export default Light
