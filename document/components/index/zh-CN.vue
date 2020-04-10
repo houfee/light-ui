@@ -9,7 +9,7 @@
       <h1 class="h1">质量可靠</h1>
       <h1 class="h2">Quality</h1>
       <p>
-        由滴滴内部组件库精简提炼而来，历经考验，并且每个组件都有充分单元测试，为后续集成提供保障。
+        该组件参考了已有的开源开源组件库，取其精华。（因精力有限，未进行单元测试）。
       </p>
     </template>
     <template slot="feature-2">
@@ -30,7 +30,7 @@
       <h1 class="h1">扩展性强</h1>
       <h1 class="h2">Scalability</h1>
       <p>
-        支持按需引入和<router-link to="/zh-CN/docs/post-compile">后编译</router-link>，轻量灵活；扩展性强，可以方便地基于现有组件实现二次开发。
+        支持按需引入和<router-link to="/zh-CN/docs/post-compile">后编译</router-link>，轻量灵活。
       </p>
     </template>
   </home-index>

@@ -72,7 +72,7 @@
     margin-top: -70px;
     text-align: left;
     color: #4b4b4c;
-    background: url('./cube.png') no-repeat 520px -10px;
+    background: url('./light.png') no-repeat 520px -10px;
     background-size: 1250px;
     @media screen and (max-width: 960px) {
       padding: 254px 32px 20px;

@@ -1,4 +1,3 @@
-import VueTemplateCompiler from 'vue-template-compiler'
 import { eventHub } from '../common/js/utils'
 import menuConfig from '../common/config/menu'
 const routeMap = {}
