@@ -26,7 +26,7 @@
 
 ![component](README/component.png)
 
-+ 在项目ic 基础组件
++ basic 基础组件
 
 + form 表单组件
 
