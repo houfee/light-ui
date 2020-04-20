@@ -91,10 +91,7 @@
       "subList": {
         "introduction": "介绍",
         "quick-start": "快速上手",
-        "post-compile": "后编译",
-        "theme": "主题",
-        "singleton": "单例模式",
-        "internationalization": "国际化"
+        "theme": "主题"
       }
     },
     "components": {
@@ -104,57 +101,27 @@
         "basic": {
           "name": "基础",
           "subList": {
+            "icon": "Icon",
             "button": "Button",
-            "loading": "Loading",
-            "tip": "Tip",
-            "toolbar": "Toolbar",
-            "tab-bar": "TabBar"
+            "link": "Link",
+            "loading": "Loading"
           }
         },
         "form": {
           "name": "表单",
           "subList": {
-            "checkbox": "Checkbox",
-            "checkbox-group": "CheckboxGroup",
-            "radio": "Radio",
-            "checker": "Checker",
-            "input": "Input",
-            "textarea": "Textarea",
-            "select": "Select",
-            "switch": "Switch",
-            "rate": "Rate",
-            "validator": "Validator",
-            "upload": "Upload",
-            "form": "Form"
           }
         },
         "popup": {
           "name": "弹出层",
           "subList": {
             "popup": "Popup",
-            "toast": "Toast",
-            "picker": "Picker",
-            "cascade-picker": "CascadePicker",
-            "date-picker": "DatePicker",
-            "time-picker": "TimePicker",
-            "segment-picker": "SegmentPicker",
-            "dialog": "Dialog",
-            "action-sheet": "ActionSheet",
-            "drawer": "Drawer",
-            "image-preview": "ImagePreview"
+            "toast": "Toast"
           }
         },
         "scroll": {
           "name": "滚动",
           "subList": {
-            "scroll": "Scroll",
-            "slide": "Slide",
-            "index-list": "IndexList",
-            "swipe": "Swipe",
-            "sticky": "Sticky",
-            "scroll-nav-bar": "ScrollNavBar",
-            "scroll-nav": "ScrollNav",
-            "recycle-list": "RecycleList"
           }
         }
       }

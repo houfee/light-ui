@@ -32,6 +32,8 @@
 
 + Popup 弹窗组件
 
++ Data 组件
+
 + Scroll 滚动组件
 
 ## Build Setup

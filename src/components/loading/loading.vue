@@ -9,7 +9,7 @@
 
 <script type="text/ecmascript-6">
   export default {
-    name: 'LgtLoading',
+    name: 'lgt-loading',
     data() {
       return {
         balde: 12

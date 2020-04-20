@@ -34,7 +34,7 @@ var webpackConfig = merge(baseWebpackConfig, {
   output: {
     path: config.build.assetsRoot,
     filename: utils.assetsPath('[name]/index.js'),
-    library: ['fee', '[name]'],
+    library: ['light-lib', '[name]'],
     libraryTarget: 'umd'
   },
   plugins: [

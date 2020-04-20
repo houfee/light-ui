@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: 'LgtButton',
+  name: 'lgt-button',
   props: {
     type: {
       type: String,
