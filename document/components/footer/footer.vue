@@ -1,6 +1,6 @@
 <template>
   <footer class="s-footer">
-    <a href="https://github.com/houfee">© 2020 - {{new Date().getFullYear()}} houfei. 京ICP备123456789号.</a>
+    <a href="https://github.com/houfee/light-ui">© 2020 - {{new Date().getFullYear()}} houfei. All Rights Reserved.</a>
   </footer>
 </template>
 

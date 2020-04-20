@@ -5,6 +5,6 @@
 </template>
 <script>
   export default {
-    name: 'LgtButtonGroup'
+    name: 'lgt-button-group'
   };
 </script>

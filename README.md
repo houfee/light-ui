@@ -26,11 +26,13 @@
 
 ![component](README/component.png)
 
-+ 在项目ic 基础组件
++ basic 基础组件
 
 + form 表单组件
 
 + Popup 弹窗组件
+
++ Data 组件
 
 + Scroll 滚动组件
 

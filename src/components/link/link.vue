@@ -24,7 +24,7 @@
 <script>
 
 export default {
-  name: 'LgtLink',
+  name: 'lgt-link',
 
   props: {
     type: {

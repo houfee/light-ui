@@ -1,6 +1,5 @@
 <template>
   <span class="langs">
-    <a href="javascript:;" >中文</a>
     <!-- 只支持中文 0.0 -->
     <!-- <a href="javascript:;" @click="toggle" >{{ current === 'zh-CN' ? 'English' : '中文' }}</a> -->
   </span>

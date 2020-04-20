@@ -4,7 +4,7 @@
 
 <script>
   export default {
-    name: 'LgtIcon',
+    name: 'lgt-icon',
 
     props: {
       name: String

@@ -1,6 +1,6 @@
 <template>
   <home-index>
-    <template slot="desc">基于 Vue.js，并添加 Cube-UI Element-UI 等组件实现的移动端组件库</template>
+    <template slot="desc">基于 Vue.js，参考组件库Cube-UI VantUI Element-UI Mint-ui，添加并优化其中部分组件实现的移动端组件库</template>
     <template slot="rec-btns">
       <router-link to="/zh-CN/docs/quick-start" class="btn-link"><span>快速上手</span></router-link>
       <router-link to="/zh-CN/docs/introduction" class="btn-link btn-active"><span>介绍</span></router-link>
@@ -9,7 +9,7 @@
       <h1 class="h1">质量可靠</h1>
       <h1 class="h2">Quality</h1>
       <p>
-        由滴滴内部组件库精简提炼而来，历经考验，并且每个组件都有充分单元测试，为后续集成提供保障。
+        该组件参考了已有的vue开源组件库(Cube-UI\VantUI\Element-UI\Mint-ui)，取其精华。（因精力有限，未进行单元测试）。
       </p>
     </template>
     <template slot="feature-2">
@@ -27,10 +27,11 @@
       </p>
     </template>
     <template slot="feature-4">
-      <h1 class="h1">扩展性强</h1>
-      <h1 class="h2">Scalability</h1>
+      <h1 class="h1">寻求帮助</h1>
+      <h1 class="h2">Join me</h1>
       <p>
-        支持按需引入和<router-link to="/zh-CN/docs/post-compile">后编译</router-link>，轻量灵活；扩展性强，可以方便地基于现有组件实现二次开发。
+        寻求志同道合的朋友，共同维护Light-ui
+        <!-- 支持按需引入和<router-link to="/zh-CN/docs/post-compile">后编译</router-link>，轻量灵活。 -->
       </p>
     </template>
   </home-index>

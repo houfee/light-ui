@@ -1,22 +1,24 @@
+// locale
+import Locale from './modules/locale'
 /* eslint-disable no-unused-vars */
-import Icon from './components/icon'
-import Button from './components/button'
-import LgtButtonGroup from './components/button-group'
-import Link from './components/link'
-import Loading from './components/loading'
-import Popup from './components/popup'
+import Button from './modules/button'
+import ButtonGroup from './modules/button-group'
+import Link from './modules/link'
+import Loading from './modules/loading'
+import Popup from './modules/popup'
+import Icon from './modules/icon'
 import Style from './common/scss'
-import './components/style/icon.scss'
 
 import { processComponentName } from './common/helpers/util'
 
 const components = [
-  Icon,
+  Locale,
   Button,
-  LgtButtonGroup,
+  ButtonGroup,
   Link,
   Loading,
-  Popup
+  Popup,
+  Icon
 ]
 
 const install = function(Vue, config = {}) {
@@ -46,5 +48,12 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
 
-export { Light }
+export {
+  Button,
+  ButtonGroup,
+  Link,
+  Loading,
+  Popup
+}
+
 export default Light
