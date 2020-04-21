@@ -19,7 +19,7 @@
   height: 25%;
   border-radius: 50% / 20%;
   opacity: 0.25;
-  background-color: #333;
+  background-color: #409eff;
   animation: spinner-fade 1s linear infinite;
   @for $num from 1 through 12 {
     &:nth-child(#{$num}) {

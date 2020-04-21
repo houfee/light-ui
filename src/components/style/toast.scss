@@ -1,0 +1,129 @@
+// @require "../../common/stylus/variable.styl"
+@import "common/var";
+.lgt-toast {
+  &.lgt-popup {
+    z-index: 900;
+  }
+  .lgt-popup-content {
+    display: flex;
+    align-items: center;
+    padding: 13px 16px;
+    color: $toast-color;
+    background-color: $toast-bgc;
+    border-radius: 2px;
+  }
+}
+.lgt-toast-icon {
+  width: 24px;
+  height: 24px;
+  font-size: $fontsize-large-xxx;
+}
+.lgt-toast-tip {
+  line-height: 20px;
+  font-size: $fontsize-medium;
+  max-width: 12em;
+  max-height: 40px;
+  overflow: hidden;
+}
+.lgt-toast-icon,
+.lgt-loading {
+  ~ .lgt-toast-tip {
+    margin-left: 8px;
+  }
+}
+.lgt-toast-fade-enter-active {
+  animation: toast-in 0.2s;
+}
+.lgt-toast-fade-leave-active {
+  animation: toast-out 0.2s;
+}
+
+@-webkit-keyframes toast-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes toast-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes toast-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes toast-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes toast-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes toast-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes toast-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes toast-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes toast-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes toast-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

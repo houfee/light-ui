@@ -156,7 +156,7 @@ function debounce(func, wait, immediate, initValue) {
 
 function processComponentName(Component, { prefix = '', firstUpperCase = false } = {}) {
   const name = Component.name
-  const pureName = name.replace(/^cube-/i, '')
+  const pureName = name.replace(/^lgt-/i, '')
   let camelizeName = `${camelize(`${prefix}${pureName}`)}`
   /* istanbul ignore if */
   if (firstUpperCase) {

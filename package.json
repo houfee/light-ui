@@ -18,6 +18,7 @@
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs"
   },
   "dependencies": {
+    "better-scroll": "^1.15.2",
     "vue": "^2.6.11",
     "vue-create-api": "^0.2.3",
     "vue-particles": "^1.0.9",

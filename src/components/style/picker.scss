@@ -1,0 +1,144 @@
+@import "../../common/scss/mixin";
+@import "../../common/scss/variable";
+
+$picker-lr-padding: 16px;
+
+.lgt-picker-fade-enter,
+.lgt-picker-fade-leave-active {
+  opacity: 0;
+}
+
+.lgt-picker-fade-enter-active,
+.lgt-picker-fade-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+
+.lgt-picker-panel {
+  height: 273px;
+  text-align: center;
+  font-size: $fontsize-medium;
+  background: $picker-bgc;
+}
+
+.lgt-picker-move-enter,
+.lgt-picker-move-leave-active {
+  transform: translate3d(0, 100%, 0);
+}
+
+.lgt-picker-move-enter-active,
+.lgt-picker-move-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+
+.lgt-picker-choose {
+  position: relative;
+  height: 60px;
+}
+
+.lgt-picker-confirm,
+.lgt-picker-cancel {
+  font-size: $fontsize-medium;
+  line-height: 60px;
+  padding: 0 $picker-lr-padding;
+  box-sizing: content-box;
+  font-size: $fontsize-medium;
+}
+
+.lgt-picker-confirm {
+  position: absolute;
+  right: 0;
+  color: $picker-confirm-btn-color;
+
+  &:active {
+    color: $picker-confirm-btn-active-color;
+  }
+}
+
+.lgt-picker-cancel {
+  position: absolute;
+  left: 0;
+  color: $picker-cancel-btn-color;
+
+  &:active {
+    color: $picker-cancel-btn-active-color;
+  }
+}
+
+.lgt-picker-title-group {
+  padding: 0 60px;
+  display: flex;
+  height: 100%;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.lgt-picker-title {
+  font-size: $fontsize-large-x;
+  line-height: 25px;
+  font-weight: normal;
+  color: $picker-title-color;
+}
+
+.lgt-picker-subtitle {
+  margin-top: 2px;
+  line-height: 16px;
+  font-size: $fontsize-small;
+  color: $picker-subtitle-color;
+}
+
+.lgt-picker-content {
+  position: relative;
+  top: 20px;
+
+  >i {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    width: 100%;
+    height: 68px;
+    pointer-events: none;
+    transform: translateZ(0);
+  }
+
+  >.border-bottom-1px {
+    top: 0;
+    background: linear-gradient(to 0, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8));
+  }
+
+  >.border-top-1px {
+    bottom: 0;
+    background: linear-gradient(to 0, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8));
+  }
+}
+
+.lgt-picker-wheel-wrapper {
+  display: flex;
+  padding: 0 $picker-lr-padding;
+
+  >div {
+    @include flex-fix();
+    height: 173px;
+    overflow: hidden;
+    font-size: $fontsize-large-xx;
+  }
+}
+
+.lgt-picker-wheel-scroll {
+  padding: 0;
+  margin-top: 68px;
+  line-height: 36px;
+  list-style: none;
+}
+
+.lgt-picker-wheel-item {
+  list-style: none;
+  height: 36px;
+  overflow: hidden;
+  white-space: nowrap;
+  color: $picker-item-color;
+}
+
+.lgt-picker-footer {
+  height: 20px;
+}

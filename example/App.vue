@@ -16,19 +16,6 @@
       </div>
     </section>
     <lgt-view></lgt-view>
-    <!-- <div class="lgt-content">
-      <span class="lgt-icon-delete"></span>
-      <span class="cubeic-close"></span>
-      <div class="part">
-        <h1>Icon 图标</h1>
-        <div class="row">
-          <i class="lgt-icon-edit"></i>
-          <i class="lgt-icon-share"></i>
-          <i class="lgt-icon-delete"></i>
-          <lgt-button type="primary" icon="lgt-icon-search">搜索</lgt-button>
-        </div>
-      </div>
-    </div> -->
   </div>
 </template>
 
@@ -71,6 +58,14 @@ export default {
             {
               path: '/toast',
               text: 'Toast'
+            },
+            {
+              path: '/picker',
+              text: 'Picker'
+            },
+            {
+              path: '/test',
+              text: 'Test'
             }
           ]
         }

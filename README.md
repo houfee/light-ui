@@ -60,3 +60,19 @@ npm run demo-build
 npm run doc-demo-build
 ```
 
+## 打包问题
+
+### `postcss-minify-gradients`
+
+> `postcss-minify-gradients` 使用 `node_modules/postcss-value-parser/unit.js`
+> `UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'length' of undefined`
+
+```js
+module.exports = function(value) {
+  // => 改为
+  // ...
+module.exports = function(value = []) {
+  // ...
+};
+
+```
